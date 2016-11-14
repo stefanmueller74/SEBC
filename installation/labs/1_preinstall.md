@@ -22,8 +22,12 @@
     nslookup $(hostname)
 
     ### Verify the nscd service is running
+    sudo yum install nscd
+    service nscd start
 
     ### Verify the ntpd service is running
+    sudo yum install ntp
+    service ntpd start
     
 
 
