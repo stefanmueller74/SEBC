@@ -24,11 +24,12 @@
     ### Verify the nscd service is running
     sudo yum install nscd
     service nscd start
+    ps -ef |grep nscd
 
     ### Verify the ntpd service is running
     sudo yum install ntp
     service ntpd start
-    
+    ps -ef |grep ntpd
 
 
  
