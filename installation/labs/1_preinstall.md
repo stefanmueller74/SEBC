@@ -12,6 +12,18 @@
     echo never > /sys/kernel/mm/transparent_hugepage/enabled
     echo never > /sys/kernel/mm/transparent_hugepage/defrag
     
+    ### Report the network interface attributes
+    ifconfig -a
+
+    ### Show forward and reverse host lookups using getent and nslookup
+
+    sudo yum install bind-utils
+    
+    nslookup $(hostname)
+
+    ### Verify the nscd service is running
+
+    ### Verify the ntpd service is running
     
 
 
