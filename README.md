@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # <center>Services Enablement Boot Camp
 
 This repository holds the course materials for Cloudera's Services
@@ -57,3 +58,6 @@ In sum, make the following changes before you start lab work.
 =======
 # SEBC
 >>>>>>> 65d72fc3e2359ece073678598e604aae94956e82
+=======
+# SEBC
+>>>>>>> 9a08f459d009f12d84b81493b0a5848b646a034a
