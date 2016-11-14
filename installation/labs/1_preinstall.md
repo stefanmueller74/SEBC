@@ -25,11 +25,13 @@
     sudo yum install nscd
     service nscd start
     ps -ef |grep nscd
+    systemctl enable nscd.service
 
     ### Verify the ntpd service is running
     sudo yum install ntp
     service ntpd start
     ps -ef |grep ntpd
+    systemctl enable ntpd.service
 
 
  
