@@ -96,3 +96,9 @@
       Replicate_Ignore_Server_Ids:
                  Master_Server_Id: 611
     row in set (0.00 sec)
+
+    ### Master dumpen
+    mysqldump --all-databases --allow-keywords --single-transaction --flush-logs --master-data=2 -r /root/mysqldump.sql
+
+    ### import in replica
+    cat /root/mysqldump.sql | mysql -u root -p
