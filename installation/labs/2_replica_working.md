@@ -44,6 +44,8 @@
     GRANT REPLICATION SLAVE ON *.* TO 'root'@'35.160.115.173' IDENTIFIED BY 'xxxxxx';
     SET GLOBAL binlog_format = 'ROW';
     FLUSH TABLES WITH READ LOCK;
+
+    UNLOCK TABLES;
     
     ### on replica
     CHANGE MASTER TO MASTER_HOST='35.163.72.61', MASTER_USER='root', \
