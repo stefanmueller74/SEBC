@@ -20,25 +20,25 @@
     create database rman DEFAULT CHARACTER SET utf8;
     grant all on amon.* TO 'rman'@'%' IDENTIFIED BY 'rman_password';
     ### METASTORE database
-    create database metastore DEFAULT CHARACTER SET utf8;
-    grant all on amon.* TO 'hive'@'%' IDENTIFIED BY 'hive_password';
-    ### SENTRY database
-    create database sentry DEFAULT CHARACTER SET utf8;
-    grant all on amon.* TO 'sentry'@'%' IDENTIFIED BY 'sentry_password';
+    create database metastore DEFAULT CHARACTER SET utf8;
+    grant all on amon.* TO 'hive'@'%' IDENTIFIED BY 'hive_password';
+    ### SENTRY database
+    create database sentry DEFAULT CHARACTER SET utf8;
+    grant all on amon.* TO 'sentry'@'%' IDENTIFIED BY 'sentry_password';
     ### Results 
-    MariaDB> show databases
-    +--------------------+
-    | Database           |
-    +--------------------+
-    | information_schema |
-    | amon               |
-    | metastore          |
-    | mysql              |
-    | performance_schema |
+    MariaDB> show databases
+    +--------------------+
+    | Database           |
+    +--------------------+
+    | information_schema |
+    | amon               |
+    | metastore          |
+    | mysql              |
+    | performance_schema |
     | rman               |
     | sentry             |
     +--------------------+
-
+    
     ### configuring replation
     ### on master
     GRANT REPLICATION SLAVE ON *.* TO 'root'@'35.160.115.173' IDENTIFIED BY 'xxxxxx';
