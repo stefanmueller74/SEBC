@@ -46,4 +46,7 @@
     FLUSH TABLES WITH READ LOCK;
     
     ### on replica
-    CHANGE MASTER TO MASTER_HOST='', MASTER_USER='root', MASTER_PASSWORD='xxxxxx', MASTER_LOG_FILE='mysql_binary_log.000003', MASTER_LOG_POS=master file offset;
+    CHANGE MASTER TO MASTER_HOST='35.163.72.61', MASTER_USER='root', \
+    MASTER_PASSWORD='xxxxxx', \
+    MASTER_LOG_FILE='mysql_binary_log.000003', \
+    MASTER_LOG_POS=2370;
