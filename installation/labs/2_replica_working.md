@@ -35,9 +35,9 @@
     | metastore          |
     | mysql              |
     | performance_schema |
-    | rman               |
-    | sentry             |
-    +--------------------+
+    | rman               |
+    | sentry             |
+    +--------------------+
 
     ### configuring replation
     ### on master
