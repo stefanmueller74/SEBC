@@ -39,7 +39,11 @@
     | sentry             |
     +--------------------+
 
+    ### configuring replation
+    ### on master
     GRANT REPLICATION SLAVE ON *.* TO 'root'@'35.160.115.173' IDENTIFIED BY 'xxxxxx';
     SET GLOBAL binlog_format = 'ROW';
     FLUSH TABLES WITH READ LOCK;
     
+    ### on replica
+    CHANGE MASTER TO MASTER_HOST='', MASTER_USER='root', MASTER_PASSWORD='xxxxxx', MASTER_LOG_FILE='mysql_binary_log.000003', MASTER_LOG_POS=master file offset;
