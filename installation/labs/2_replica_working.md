@@ -9,8 +9,8 @@
             
     mysql -u root -p
     ### AMON database 
-    asfjgjsfs    ### create database amon DEFAULT CHARACTER SET utf8;
-    #### grant all on amon.* TO 'amon'@'%' IDENTIFIED BY 'amon_password';
+    create database amon DEFAULT CHARACTER SET utf8;
+    #### grant all on amon.* TO 'amon'@'%' IDENTIFIED BY 'amon_password';
     ### RMON database
     create database rman DEFAULT CHARACTER SET utf8;
     grant all on amon.* TO 'rman'@'%' IDENTIFIED BY 'rman_password';
