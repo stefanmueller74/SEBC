@@ -10,10 +10,10 @@
     mysql -u root -p
     ### AMON database 
     create database amon DEFAULT CHARACTER SET utf8;
-    #### grant all on amon.* TO 'amon'@'%' IDENTIFIED BY 'amon_password';
+    grant all on amon.* TO 'amon'@'%' IDENTIFIED BY 'amon_password';
     ### RMON database
-    create database rman DEFAULT CHARACTER SET utf8;
-    grant all on amon.* TO 'rman'@'%' IDENTIFIED BY 'rman_password';
+    create database rman DEFAULT CHARACTER SET utf8;
+    grant all on amon.* TO 'rman'@'%' IDENTIFIED BY 'rman_password';
     ### METASTORE database
     create database metastore DEFAULT CHARACTER SET utf8;
     grant all on amon.* TO 'hive'@'%' IDENTIFIED BY 'hive_password';
