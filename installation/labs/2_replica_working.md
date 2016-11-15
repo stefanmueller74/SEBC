@@ -52,3 +52,5 @@
     MASTER_PASSWORD='xxxxxx', \
     MASTER_LOG_FILE='mysql_binary_log.000003', \
     MASTER_LOG_POS=2370;
+
+    START SLAVE;
