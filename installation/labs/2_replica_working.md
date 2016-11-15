@@ -41,14 +41,14 @@
     
     ### configuring replation
     ### on master
-    GRANT REPLICATION SLAVE ON *.* TO 'root'@'35.160.115.173' IDENTIFIED BY 'xxxxxx';
+    GRANT REPLICATION SLAVE ON *.* TO 'root'@'ec2-35-160-115-173.us-west-2.compute.amazonaws.com' IDENTIFIED BY 'xxxxxx';
     SET GLOBAL binlog_format = 'ROW';
     FLUSH TABLES WITH READ LOCK;
 
     UNLOCK TABLES;
     
     ### on replica
-    CHANGE MASTER TO MASTER_HOST='35.163.72.61', MASTER_USER='root', \
+    CHANGE MASTER TO MASTER_HOST='ec2-35-163-72-61.us-west-2.compute.amazonaws.com', MASTER_USER='root', \
     MASTER_PASSWORD='xxxxxx', \
     MASTER_LOG_FILE='mysql_binary_log.000003', \
     MASTER_LOG_POS=2370;
