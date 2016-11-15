@@ -41,3 +41,4 @@
     | sentry             |
     +--------------------+
 
+    GRANT REPLICATION SLAVE ON *.* TO 'root'@'35.160.115.173' IDENTIFIED BY 'xxxxxx';
