@@ -9,25 +9,19 @@
 
 
     mysql -u root -p
-
-    ## AMON database
+    ### AMON database
     create database amon DEFAULT CHARACTER SET utf8;
     grant all on amon.* TO 'amon'@'%' IDENTIFIED BY 'amon_password';
-
-    ## RMON database
+    ### RMON database
     create database rman DEFAULT CHARACTER SET utf8;
     grant all on amon.* TO 'rman'@'%' IDENTIFIED BY 'rman_password';
-
-    ## METASTORE database
+    ### METASTORE database
     create database metastore DEFAULT CHARACTER SET utf8;
     grant all on amon.* TO 'hive'@'%' IDENTIFIED BY 'hive_password';
-
-    ## SENTRY database
+    ### SENTRY database
     create database sentry DEFAULT CHARACTER SET utf8;
     grant all on amon.* TO 'sentry'@'%' IDENTIFIED BY 'sentry_password';
-
-
-    ## Results 
+    ### Results 
     MariaDB> show databases
     +--------------------+
     | Database           |
