@@ -21,6 +21,17 @@
     
     nslookup $(hostname)
 
+
+  [root@ip-172-31-8-164 ~]# nslookup ec2-35-163-72-61.us-west-2.compute.amazonaws.comServer:         172.31.0.2Address:        172.31.0.2#53Non-authoritative answer:Name:   ec2-35-163-72-61.us-west-2.compute.amazonaws.comAddress: 172.31.8.164
+    nslookup 35.163.72.61
+    Server:         172.31.0.2
+    Address:        172.31.0.2#53
+    Non-authoritative answer:
+    61.72.163.35.in-addr.arpa       name = ec2-35-163-72-61.us-west-2.compute.amazonaws.com.
+
+    [root@ip-172-31-8-164 ~]# getent hosts 35.163.72.61
+    35.163.72.61    ec2-35-163-72-61.us-west-2.compute.amazonaws.com
+
     ### Verify the nscd service is running
     sudo yum install nscd
     service nscd start
