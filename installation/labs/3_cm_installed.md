@@ -1,4 +1,6 @@
+   wget "https://archive.cloudera.com/cm5/redhat/7/x86_64/cm/cloudera-manager.repo"
 
+   cp cloudera-manager.repo /etc/yum.repos.d/
 
    vi /etc/yum.repos.d/cloudera-manager.repo
     
@@ -12,3 +14,5 @@
    sudo yum install cloudera-manager-daemons cloudera-manager-server
 
    tail -f /var/log/cloudera-scm-server/cloudera-scm-server.log 
+
+   sudo service cloudera-scm-server start
