@@ -11,6 +11,10 @@
     ### disable transparent hugepages
     echo never > /sys/kernel/mm/transparent_hugepage/enabled
     echo never > /sys/kernel/mm/transparent_hugepage/defrag
+
+    ### copy the lines above into /etc/rc.d/rc.local
+    vi  /etc/rc.d/rc.local
+    chmod +x /etc/rc.d/rc.local
     
     ### Report the network interface attributes
     ifconfig -a
@@ -21,8 +25,13 @@
     
     nslookup $(hostname)
 
+    [root@ip-172-31-8-164 ~]# nslookup ec2-35-163-72-61.us-west-2.compute.amazonaws.com
+    Server:         172.31.0.2
+    Address:        172.31.0.2#53
+    Non-authoritative answer:
+    Name:   ec2-35-163-72-61.us-west-2.compute.amazonaws.com
+    Address: 172.31.8.164
 
-  [root@ip-172-31-8-164 ~]# nslookup ec2-35-163-72-61.us-west-2.compute.amazonaws.comServer:         172.31.0.2Address:        172.31.0.2#53Non-authoritative answer:Name:   ec2-35-163-72-61.us-west-2.compute.amazonaws.comAddress: 172.31.8.164
     nslookup 35.163.72.61
     Server:         172.31.0.2
     Address:        172.31.0.2#53
