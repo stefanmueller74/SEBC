@@ -44,3 +44,4 @@
 
 
    tail -f /var/log/cloudera-scm-server/cloudera-scm-server.log 
+   2016-11-16 04:57:46,668 INFO ScmActive-0:com.cloudera.server.cmf.components.ScmActive: ScmActive completed successfully.
