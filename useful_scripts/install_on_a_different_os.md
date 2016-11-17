@@ -164,7 +164,10 @@
         sudo /usr/share/cmf/schema/scm_prepare_database.sh  mysql scm scm scm -h $HOSTNAME -P 3306
 
         service cloudera-scm-server start
-        
+       
+        tail -f /var/log/cloudera-scm-server/cloudera-scm-server.log 
+        ### look for jetty server 
+       
 # 3 Installing CDH
 
     AWS: Port 7180 für die entsprechende SecurityGroup freigeben
