@@ -7,7 +7,8 @@
     [root@ip-172-31-8-164 ec2-user]# more /etc/ssh/sshd_config |grep -i permitroot
     PermitRootLogin yes
     # the setting of "PermitRootLogin without-password".
-
-    
+        
+    [root@ip-172-31-8-164 ec2-user]# service sshd restart
+    Redirecting to /bin/systemctl restart  sshd.service
 
 
