@@ -161,19 +161,19 @@
         
         /usr/share/cmf/schema/scm_prepare_database.sh
         Parameters: 1. database-type 2. database-name 3. username 4. password scm_password
-        sudo /usr/share/cmf/schema/scm_prepare_database.sh  mysql scm scm scm_password -h $HOSTNAME -P 3306
+        sudo /usr/share/cmf/schema/scm_prepare_database.sh  mysql scm scm scm -h $HOSTNAME -P 3306
 
         service cloudera-scm-server start
         
 # 3 Installing CDH
 
     AWS: Port 7180 für die entsprechende SecurityGroup freigeben
-    URL: http://54.93.124.224:7180
+    URL: http://xx.xx.xx.xx:7180
     Credentials: admin/admin
 
 ## Hosts im Cluster für CDH konfigurieren
 
-* Adressbereich 172.31.24.[138-142]
+* Adressbereich xx.xx.xx.[xx-xx] # private IPs
 
 * Optionen
 
