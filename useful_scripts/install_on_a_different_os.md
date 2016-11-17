@@ -155,13 +155,13 @@
 
 ## Installing CM
 
-        sudo yum install cloudera-manager-daemons cloudera-manager-server
+        sudo yum -y install cloudera-manager-daemons cloudera-manager-server
         
-        sudo yum install oracle-j2sdk1.7
+        sudo yum -y install oracle-j2sdk1.7
         
         /usr/share/cmf/schema/scm_prepare_database.sh
         Parameters: 1. database-type 2. database-name 3. username 4. password scm_password
-        sudo /usr/share/cmf/schema/scm_prepare_database.sh  mysql scm scm scm_password -h ip-172-31-24-138.eu-central-1.compute.internal -P 3306
+        sudo /usr/share/cmf/schema/scm_prepare_database.sh  mysql scm scm scm_password -h $HOSTNAME -P 3306
 
         service cloudera-scm-server start
         
