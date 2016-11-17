@@ -11,4 +11,5 @@
     [root@ip-172-31-8-164 ec2-user]# service sshd restart
     Redirecting to /bin/systemctl restart  sshd.service
 
-
+    ### install packages within cloudera manager via root
+    https://www.cloudera.com/documentation/enterprise/5-2-x/topics/cm_ig_permissions.html
