@@ -3,7 +3,7 @@
 ## Supported version 
 * URL: http://www.cloudera.com/documentation/director/1-1-x/topics/director_deployment_requirements.html#concept_fxs_mpn_
 * AMI: Red Hat 6.6
-* Instance-type: RHEL 6.6
+* Instance-type: RHEL-6.6_HVM_GA-20150128-x86_64-1-Hourly2-GP2 (ami-0b5f073b)
 * Attach Storage: 30GB via EBS
 
         Checking diskspace 
