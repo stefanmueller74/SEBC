@@ -18,13 +18,13 @@
     grant all on amon.* TO 'amon'@'%' IDENTIFIED BY 'amon_password';
     ### RMON database
     create database rman DEFAULT CHARACTER SET utf8;
-    grant all on amon.* TO 'rman'@'%' IDENTIFIED BY 'rman_password';
+    grant all on rmn.* TO 'rman'@'%' IDENTIFIED BY 'rman_password';
     ### METASTORE database
     create database metastore DEFAULT CHARACTER SET utf8;
-    grant all on amon.* TO 'hive'@'%' IDENTIFIED BY 'hive_password';
+    grant all on metastore.* TO 'hive'@'%' IDENTIFIED BY 'hive_password';
     ### SENTRY database
     create database sentry DEFAULT CHARACTER SET utf8;
-    grant all on amon.* TO 'sentry'@'%' IDENTIFIED BY 'sentry_password';
+    grant all on sentry.* TO 'sentry'@'%' IDENTIFIED BY 'sentry_password';
     ### Results 
     MariaDB> show databases
     +--------------------+
@@ -103,11 +103,8 @@
     ### import in replica
     cat /root/mysqldump.sql | mysql -u root -p
 
-
-    grant all on amon.* TO 'amon'@'%' IDENTIFIED BY 'amon_password';
-    grant all on rmon.* TO 'rman'@'%' IDENTIFIED BY 'rman_password';
-    grant all on metastore.* TO 'hive'@'%' IDENTIFIED BY 'hive_password';
-    grant all on sentry.* TO 'sentry'@'%' IDENTIFIED BY 'sentry_password';
     create database hue DEFAULT CHARACTER SET utf8;
     grant all on hue.* TO 'hue'@'%' IDENTIFIED BY 'hue_password';
-    grant all on amon.* TO 'hue'@'%' IDENTIFIED BY 'hue_password';
+    
+    create database oozie DEFAULT CHARACTER SET utf8;
+    grant all on oozie.* TO 'oozie'@'%' IDENTIFIED BY 'oozie_password';
