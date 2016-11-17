@@ -110,17 +110,17 @@
         mysql -u root -p
         
         create database scm DEFAULT CHARACTER SET utf8;
-        grant all on scm.* TO 'scm'@'%' IDENTIFIED BY 'scm_password';
+        grant all on scm.* TO 'scm'@'%' IDENTIFIED BY 'scm';
         create database rman DEFAULT CHARACTER SET utf8;
-        grant all on rman.* TO 'rman'@'%' IDENTIFIED BY 'rman_password';
+        grant all on rman.* TO 'rman'@'%' IDENTIFIED BY 'rman';
         create database hive DEFAULT CHARACTER SET utf8;
-        grant all on hive.* TO 'hive'@'%' IDENTIFIED BY 'hive_password';
+        grant all on hive.* TO 'hive'@'%' IDENTIFIED BY 'hive';
         create database oozie DEFAULT CHARACTER SET utf8;
-        grant all on oozie.* TO 'oozie'@'%' IDENTIFIED BY 'oozie_password';
+        grant all on oozie.* TO 'oozie'@'%' IDENTIFIED BY 'oozie';
         create database hue DEFAULT CHARACTER SET utf8;
-        grant all on hue.* TO 'hue'@'%' IDENTIFIED BY 'hue_password';
+        grant all on hue.* TO 'hue'@'%' IDENTIFIED BY 'hue';
         create database sentry DEFAULT CHARACTER SET utf8;
-        grant all on sentry.* TO 'sentry'@'%' IDENTIFIED BY 'sentry_password';
+        grant all on sentry.* TO 'sentry'@'%' IDENTIFIED BY 'sentry';
         show databases;
         
 ## OUTPUT
