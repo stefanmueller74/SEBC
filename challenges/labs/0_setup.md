@@ -3,8 +3,10 @@
 * AMI ID, and 
     RHEL-7.2_HVM-20160219-x86_64-2-Hourly2-GP2 (ami-ca56b5aa)
 * OS you are using
+    <pre><code>
     [ec2-user@ip-172-31-8-247 ~]$ more /etc/redhat-release
     Red Hat Enterprise Linux Server release 7.2 (Maipo)
+    </code></pre>
 * List the volume space you have available on each node
 <pre><code>
 [ec2-user@ip-172-31-8-247 ~]$
