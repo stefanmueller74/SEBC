@@ -18,3 +18,4 @@
 * I think 2 weeks of hard work with lots of input. I have done a lot of installation on linux/unix/windows (big databases, etl tools) over the years.
 
 * Security with Kerberos and deep dive into Cloudera Manager
+* update my overall installing skills to the latest developments
