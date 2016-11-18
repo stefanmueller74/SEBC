@@ -19,3 +19,7 @@
 
 * Security with Kerberos and deep dive into Cloudera Manager
 * update my overall installing skills to the latest developments
+
+
+
+* And finally Thank you very much for a great week. And greetings to Nathan. :-)
