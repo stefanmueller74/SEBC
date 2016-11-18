@@ -1,3 +1,4 @@
+# Copy the statement SHOW GRANTS FOR <database> and the output for each of rman, hive, and scm into the file
 <pre><code>
 [ec2-user@ip-172-31-8-247 ~]$ mysql -h 172.31.8.247  -P 3306 -u root -proot
 Warning: Using a password on the command line interface can be insecure.
@@ -45,3 +46,20 @@ mysql> SHOW GRANTS FOR scm;
 mysql>
 
 </code></pre>
+# hdfs dfs -ls /user 
+<pre><code>
+[hdfs@ip-172-31-8-248 ec2-user]$ hdfs dfs -ls /user
+Found 6 items
+drwxr-xr-x   - bavaria bavaria          0 2016-11-18 05:40 /user/bavaria
+drwxrwxrwx   - mapred  hadoop           0 2016-11-18 05:32 /user/history
+drwxrwxr-t   - hive    hive             0 2016-11-18 05:33 /user/hive
+drwxrwxr-x   - hue     hue              0 2016-11-18 05:34 /user/hue
+drwxrwxr-x   - oozie   oozie            0 2016-11-18 05:34 /user/oozie
+drwxr-xr-x   - saxony  saxony           0 2016-11-18 05:40 /user/saxony
+[hdfs@ip-172-31-8-248 ec2-user]$
+
+</code></pre>
+
+
+
+
