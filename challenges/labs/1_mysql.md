@@ -40,6 +40,8 @@ mysql> show databases;
 
 </code></pre>
 
+
+
 # Show database priviledges
 <pre><code>
 [ec2-user@ip-172-31-8-247 ~]$ mysql -u root -proot
