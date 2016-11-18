@@ -84,3 +84,14 @@ tmpfs           7.2G     0  7.2G   0% /sys/fs/cgroup
 tmpfs           1.5G     0  1.5G   0% /run/user/1000
 </code></pre>
 # The command and output for yum repolist enabled
+<pre><code>
+[ec2-user@ip-172-31-8-247 ~]$ sudo yum repolist enabled
+Loaded plugins: amazon-id, rhui-lb, search-disabled-repos
+repo id                                                                  repo name                                                                                status
+rhui-REGION-client-config-server-7/x86_64                                Red Hat Update Infrastructure 2.0 Client Configuration Server 7                               6
+rhui-REGION-rhel-server-releases/7Server/x86_64                          Red Hat Enterprise Linux Server 7 (RPMs)                                                 13,390
+rhui-REGION-rhel-server-rh-common/7Server/x86_64                         Red Hat Enterprise Linux Server 7 RH Common (RPMs)                                          209
+repolist: 13,605
+[ec2-user@ip-172-31-8-247 ~]$
+
+</code></pre>
