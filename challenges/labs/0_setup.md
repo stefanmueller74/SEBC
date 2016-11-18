@@ -1,13 +1,13 @@
-** List the region, 
+# List the region, 
     US West (Oregon)
-** AMI ID, and 
+# AMI ID, and 
     RHEL-7.2_HVM-20160219-x86_64-2-Hourly2-GP2 (ami-ca56b5aa)
-** OS you are using
+# OS you are using
     <pre><code>
     [ec2-user@ip-172-31-8-247 ~]$ more /etc/redhat-release
     Red Hat Enterprise Linux Server release 7.2 (Maipo)
     </code></pre>
-** List the volume space you have available on each node
+# List the volume space you have available on each node
 <pre><code>
 [ec2-user@ip-172-31-8-247 ~]$
 [ec2-user@ip-172-31-8-247 ~]$ echo $HOSTNAME; df -h
@@ -83,4 +83,4 @@ tmpfs           7.2G     0  7.2G   0% /sys/fs/cgroup
 /dev/xvdb        20G   44M   19G   1% /hadoop
 tmpfs           1.5G     0  1.5G   0% /run/user/1000
 </code></pre>
-** The command and output for yum repolist enabled
+# The command and output for yum repolist enabled
