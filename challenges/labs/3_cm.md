@@ -60,6 +60,70 @@ drwxr-xr-x   - saxony  saxony           0 2016-11-18 05:40 /user/saxony
 
 </code></pre>
 
-
-
+# The output from the CM API call ../api/v12/hosts
+<pre><code>
+{
+  "items" : [ {
+    "hostId" : "i-0fab5efa13167b9f9",
+    "ipAddress" : "172.31.8.247",
+    "hostname" : "ip-172-31-8-247.us-west-2.compute.internal",
+    "rackId" : "/default",
+    "hostUrl" : "http://ip-172-31-8-248.us-west-2.compute.internal:7180/cmf/hostRedirect/i-0fab5efa13167b9f9",
+    "maintenanceMode" : false,
+    "maintenanceOwners" : [ ],
+    "commissionState" : "COMMISSIONED",
+    "numCores" : 4,
+    "numPhysicalCores" : 2,
+    "totalPhysMemBytes" : 15332438016
+  }, {
+    "hostId" : "i-052fc2b6c043248c5",
+    "ipAddress" : "172.31.8.248",
+    "hostname" : "ip-172-31-8-248.us-west-2.compute.internal",
+    "rackId" : "/default",
+    "hostUrl" : "http://ip-172-31-8-248.us-west-2.compute.internal:7180/cmf/hostRedirect/i-052fc2b6c043248c5",
+    "maintenanceMode" : false,
+    "maintenanceOwners" : [ ],
+    "commissionState" : "COMMISSIONED",
+    "numCores" : 4,
+    "numPhysicalCores" : 2,
+    "totalPhysMemBytes" : 15332438016
+  }, {
+    "hostId" : "i-010cd40f85d08fa82",
+    "ipAddress" : "172.31.8.249",
+    "hostname" : "ip-172-31-8-249.us-west-2.compute.internal",
+    "rackId" : "/default",
+    "hostUrl" : "http://ip-172-31-8-248.us-west-2.compute.internal:7180/cmf/hostRedirect/i-010cd40f85d08fa82",
+    "maintenanceMode" : false,
+    "maintenanceOwners" : [ ],
+    "commissionState" : "COMMISSIONED",
+    "numCores" : 4,
+    "numPhysicalCores" : 2,
+    "totalPhysMemBytes" : 15332438016
+  }, {
+    "hostId" : "i-0fe4f689276d25b4f",
+    "ipAddress" : "172.31.8.250",
+    "hostname" : "ip-172-31-8-250.us-west-2.compute.internal",
+    "rackId" : "/default",
+    "hostUrl" : "http://ip-172-31-8-248.us-west-2.compute.internal:7180/cmf/hostRedirect/i-0fe4f689276d25b4f",
+    "maintenanceMode" : false,
+    "maintenanceOwners" : [ ],
+    "commissionState" : "COMMISSIONED",
+    "numCores" : 4,
+    "numPhysicalCores" : 2,
+    "totalPhysMemBytes" : 15332438016
+  }, {
+    "hostId" : "i-00f2e3d403f1bfb19",
+    "ipAddress" : "172.31.8.251",
+    "hostname" : "ip-172-31-8-251.us-west-2.compute.internal",
+    "rackId" : "/default",
+    "hostUrl" : "http://ip-172-31-8-248.us-west-2.compute.internal:7180/cmf/hostRedirect/i-00f2e3d403f1bfb19",
+    "maintenanceMode" : false,
+    "maintenanceOwners" : [ ],
+    "commissionState" : "COMMISSIONED",
+    "numCores" : 4,
+    "numPhysicalCores" : 2,
+    "totalPhysMemBytes" : 15332438016
+  } ]
+}
+</code></pre>
 
