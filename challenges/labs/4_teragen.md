@@ -1,3 +1,4 @@
+# The full teragen command and The output of the time command
 <pre><code>
 [bavaria@ip-172-31-8-248 ec2-user]$
 [bavaria@ip-172-31-8-248 ec2-user]$
@@ -86,4 +87,19 @@ real    0m49.010s
 user    0m5.797s
 sys     0m0.228s
 [bavaria@ip-172-31-8-248 ec2-user]$
+</code></pre>
+
+# The command and output of hdfs dfs -ls /user/bavaria/tgen512m 
+
+<pre><code>
+[bavaria@ip-172-31-8-248 ec2-user]$
+[bavaria@ip-172-31-8-248 ec2-user]$ hdfs dfs -ls /user/bavaria/tgen512m
+Found 5 items
+-rw-r--r--   3 bavaria bavaria          0 2016-11-18 05:52 /user/bavaria/tgen512m/_SUCCESS
+-rw-r--r--   3 bavaria bavaria 1280000000 2016-11-18 05:52 /user/bavaria/tgen512m/part-m-00000
+-rw-r--r--   3 bavaria bavaria 1280000000 2016-11-18 05:52 /user/bavaria/tgen512m/part-m-00001
+-rw-r--r--   3 bavaria bavaria 1280000000 2016-11-18 05:52 /user/bavaria/tgen512m/part-m-00002
+-rw-r--r--   3 bavaria bavaria 1280000000 2016-11-18 05:52 /user/bavaria/tgen512m/part-m-00003
+[bavaria@ip-172-31-8-248 ec2-user]$
+
 </code></pre>
