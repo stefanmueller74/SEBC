@@ -11,10 +11,10 @@
 
 # Which topic did you feel was most helpful? Which topic was not useful, if any?
 
-Kerberos was most helpful obiviously.
+* Kerberos was most helpful obiviously.
 
 # How long before you are ready to to install a production cluster by yourself? What do you need to work on?
 
-I think 2 weeks of hard work with lots of input. I have done a lot of installation on linux/unix/windows (big databases, etl tools) over the years.
+* I think 2 weeks of hard work with lots of input. I have done a lot of installation on linux/unix/windows (big databases, etl tools) over the years.
 
-Security with Kerberos and deep dive into Cloudera Manager
+* Security with Kerberos and deep dive into Cloudera Manager
